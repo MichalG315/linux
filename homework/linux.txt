@@ -30,7 +30,7 @@ Michal      3192  0.0  0.1 577356 30868 ?        Sl   15:18   0:00 /usr/bin/upda
   270  mkdir backup
   271  mv copy.txt ./backup/
   272  wc -l processes.txt > selected.txt
-  273  grep /bin processes.txt >> selected.txt
+  273  grep -n "/bin" processes.txt >> selected.txt
   274  hisotry
   275  history
   276  history | tail -n12 > commands.txt
