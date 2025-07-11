@@ -1,0 +1,36 @@
+Michal@UbuntuMGr:~/LinuxHomework$ cat selected.txt commands.txt
+226 processes.txt
+root        1273  0.0  0.0 364316  2372 ?        Sl   15:17   0:01 /usr/bin/VBoxDRMClient
+root        1374  0.0  0.1 120924 22464 ?        Ssl  15:17   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+Michal      2056  0.0  0.0 123976 14124 ?        S<sl 15:17   0:00 /usr/bin/pipewire
+Michal      2057  0.0  0.0 106404  5808 ?        Ssl  15:17   0:00 /usr/bin/pipewire -c filter-chain.conf
+Michal      2062  0.0  0.1 415572 18160 ?        S<sl 15:17   0:00 /usr/bin/wireplumber
+Michal      2064  0.0  0.0 124140 12724 ?        S<sl 15:17   0:00 /usr/bin/pipewire-pulse
+Michal      2072  0.0  0.0 325176  9976 ?        SLsl 15:17   0:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+Michal      2074  0.0  0.0  10916  6516 ?        Ss   15:17   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+Michal      2127  0.0  0.0 244336  5984 tty2     Ssl+ 15:17   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+Michal      2287  7.8  2.6 5303740 435656 ?      Ssl  15:17   1:44 /usr/bin/gnome-shell
+Michal      2303  0.0  0.0   9624  5000 ?        S    15:17   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
+Michal      2409  0.0  0.1 2601660 26744 ?       Sl   15:17   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+Michal      2424  0.1  0.0 397312 12108 ?        Ssl  15:17   0:02 /usr/bin/ibus-daemon --panel disable
+Michal      2698  0.0  0.3 226796 63700 ?        S    15:17   0:00 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.B5LM92 -listenfd 4 -listenfd 5 -displayfd 6 -initfd 7 -byteswappedclients
+Michal      2801  0.0  0.1 2675360 26852 ?       Sl   15:17   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+Michal      2968  0.0  0.0  28160  1376 ?        S    15:17   0:00 /usr/bin/VBoxClient --clipboard
+Michal      2970  0.0  0.0 226968  4340 ?        Sl   15:17   0:00 /usr/bin/VBoxClient --clipboard
+Michal      2995  0.0  0.0  28160  1376 ?        S    15:17   0:00 /usr/bin/VBoxClient --vmsvga-session
+Michal      2997  0.0  0.0 160264  2324 ?        Sl   15:17   0:00 /usr/bin/VBoxClient --vmsvga-session
+Michal      3026  0.0  0.0  39136 12000 ?        Ss   15:17   0:00 /snap/snapd-desktop-integration/315/usr/bin/snapd-desktop-integration
+Michal      3108  0.0  0.1 429620 30632 ?        Sl   15:17   0:00 /snap/snapd-desktop-integration/315/usr/bin/snapd-desktop-integration
+Michal      3192  0.0  0.1 577356 30868 ?        Sl   15:18   0:00 /usr/bin/update-notifier
+  265  mkdir LinuxHomework
+  266  cd LinuxHomework
+  267  touch processes.txt
+  268  ps aux > processes.txt
+  269  cp processes.txt copy.txt
+  270  mkdir backup
+  271  mv copy.txt ./backup/
+  272  wc -l processes.txt > selected.txt
+  273  grep /bin processes.txt >> selected.txt
+  274  hisotry
+  275  history
+  276  history | tail -n12 > commands.txt
